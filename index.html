@@ -247,4 +247,325 @@
       display:flex; align-items:center; justify-content:space-between; gap: 12px;
       margin-bottom: 10px;
     }
-    .division .label stron
+    .division .label strong{
+      font-size: 16px;
+      letter-spacing: .02em;
+    }
+    .badge{
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(20,20,20,.62);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: rgba(255,250,242,.65);
+      white-space: nowrap;
+    }
+    .division p{ margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+    ul.clean{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display:grid;
+      gap: 8px;
+    }
+    ul.clean li{
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(20,20,20,.10);
+      background: rgba(255,250,242,.72);
+      font-size: 13px;
+      color: rgba(20,20,20,.78);
+    }
+
+    /* Philosophy + Values */
+    .twoCol{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .quote{
+      border-left: 3px solid rgba(184,155,94,.7);
+      padding: 14px 14px 14px 16px;
+      border-radius: 16px;
+      background: rgba(184,155,94,.10);
+      color: rgba(20,20,20,.78);
+      font-size: 14px;
+    }
+
+    /* Contact */
+    .contactBox{
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(255,250,242,.85);
+      padding: 18px;
+      margin-top: 16px;
+      box-shadow: 0 1px 0 rgba(20,20,20,.04) inset;
+    }
+    .contactRow{
+      display:flex; gap: 12px; flex-wrap: wrap; align-items:center; justify-content: space-between;
+    }
+    .contactRow .left{
+      min-width: 260px;
+    }
+    .contactRow .left h3{
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .contactRow .left p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer{
+      margin-top: 56px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      display:flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: rgba(20,20,20,.62);
+      font-size: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 920px){
+      .hero h1{ font-size: 36px; }
+      .card{ grid-column: span 12; }
+      .division{ grid-column: span 12; }
+      .twoCol{ grid-template-columns: 1fr; }
+      .brand{ min-width: unset; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navBar">
+      <div class="brand">
+        <div class="mark">M</div>
+        <div class="brandText">
+          <div class="name">Montbelle Holdings</div>
+          <div class="tag">Luxury lifestyle & asset group</div>
+        </div>
+      </div>
+
+      <nav>
+        <a class="pill" href="#about">About</a>
+        <a class="pill" href="#divisions">Divisions</a>
+        <a class="pill" href="#values">Values</a>
+        <a class="pill" href="#insights">Ideas</a>
+        <a class="pill cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-label="Montbelle hero">
+      <div class="kicker"><span class="dot"></span> Private group • Curated ventures</div>
+
+      <h1>Luxury assets, strategic intelligence, and curated aesthetics — built with intention.</h1>
+
+      <p>
+        Montbelle Holdings is a private lifestyle and asset group operating across property, management consulting,
+        strategic advisory, image, and photography. We partner selectively, prioritising discretion, quality, and enduring value.
+      </p>
+
+      <div class="heroActions">
+        <a class="btn primary" href="#divisions">Explore the divisions</a>
+        <a class="btn" href="#contact">Make an enquiry</a>
+      </div>
+
+      <div class="grid" aria-label="Highlights">
+        <div class="card">
+          <h3>Asset-led thinking</h3>
+          <p>We focus on long-term value creation across property, portfolio decisions, and brand equity.</p>
+          <div class="meta">Estates • Capital discipline</div>
+        </div>
+        <div class="card">
+          <h3>Discreet execution</h3>
+          <p>Our work is calm, structured, and deliberate — the goal is outcomes, not noise.</p>
+          <div class="meta">Advisory • Aesthetics</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-label="About">
+      <div class="sectionHead">
+        <h2>About</h2>
+        <p class="sub">A private house of brands operating across assets, advisory, and aesthetics.</p>
+      </div>
+
+      <div class="twoCol">
+        <div class="card" style="grid-column: unset;">
+          <h3>Montbelle is built around a simple belief.</h3>
+          <p>
+            Assets should appreciate, strategy should be defensible, and presentation should be intentional.
+            We bring together commercial discipline and refined taste to help individuals and organisations make better decisions —
+            and look the part while doing it.
+          </p>
+          <p style="margin-top:12px;">
+            The group’s activities are delivered through dedicated divisions, allowing each area to remain focused, specialised, and premium.
+          </p>
+        </div>
+
+        <div class="quote">
+          “Luxury is not excess. It is restraint, taste, and consistency.”<br><br>
+          <span style="color:rgba(20,20,20,.62);">Montbelle operates with discretion. Engagements are selective.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="divisions" aria-label="Divisions">
+      <div class="sectionHead">
+        <h2>Divisions</h2>
+        <p class="sub">Distinct verticals, one philosophy: value creation with taste.</p>
+      </div>
+
+      <div class="grid" style="margin-top:16px;">
+        <div class="division">
+          <div class="label">
+            <strong>Montbelle Estates</strong>
+            <span class="badge">Real Estate</span>
+          </div>
+          <p>Property acquisition, portfolio optimisation, and value-led improvements — with a long-term lens.</p>
+          <ul class="clean">
+            <li>Buy to hold strategy and deal screening</li>
+            <li>Property improvement planning and ROI logic</li>
+            <li>Portfolio positioning and performance reviews</li>
+          </ul>
+        </div>
+
+        <div class="division">
+          <div class="label">
+            <strong>Montbelle Advisory</strong>
+            <span class="badge">Consulting</span>
+          </div>
+          <p>Management consulting and strategic advisory focused on commercial clarity, pricing, and execution.</p>
+          <ul class="clean">
+            <li>Management consulting for growth and operating clarity</li>
+            <li>Commercial models, forecasting, and scenario planning</li>
+            <li>Pricing, packaging, and offer simplification</li>
+          </ul>
+        </div>
+
+        <div class="division">
+          <div class="label">
+            <strong>Montbelle Image</strong>
+            <span class="badge">Image Consulting</span>
+          </div>
+          <p>Executive presence and personal brand refinement — wardrobe, style direction, and visual coherence.</p>
+          <ul class="clean">
+            <li>Executive image strategy and style curation</li>
+            <li>Personal brand positioning and visual guidelines</li>
+            <li>Event and professional styling support</li>
+          </ul>
+        </div>
+
+        <div class="division">
+          <div class="label">
+            <strong>Montbelle Studio</strong>
+            <span class="badge">Photography</span>
+          </div>
+          <p>Premium photography for personal brand, lifestyle, and discreet corporate needs.</p>
+          <ul class="clean">
+            <li>Portraits and personal brand sessions</li>
+            <li>Lifestyle, travel, and editorial-style shoots</li>
+            <li>Brand visuals for founders and executives</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="values" aria-label="Values">
+      <div class="sectionHead">
+        <h2>Values</h2>
+        <p class="sub">Luxury is a standard. The standard is how we operate.</p>
+      </div>
+
+      <div class="grid" style="margin-top:16px;">
+        <div class="card">
+          <h3>Discretion</h3>
+          <p>We respect privacy. We do not over-share, over-market, or over-promise. Work speaks.</p>
+        </div>
+        <div class="card">
+          <h3>Precision</h3>
+          <p>Clear thinking, structured decisions, and polished delivery — in business, in assets, and in image.</p>
+        </div>
+        <div class="card" style="grid-column: span 12;">
+          <h3>Consistency</h3>
+          <p>Premium brands are built through repeatable excellence. Montbelle is designed for long-term credibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" aria-label="Ideas">
+      <div class="sectionHead">
+        <h2>Ideas</h2>
+        <p class="sub">Additional Montbelle concepts that match your “luxury lifestyle + asset” direction.</p>
+      </div>
+
+      <div class="grid" style="margin-top:16px;">
+        <div class="card">
+          <h3>Montbelle Curations</h3>
+          <p>Curated lifestyle guidance: fragrance, wardrobe staples, travel planning, and gifting — taste-led, not trend-led.</p>
+          <div class="meta">Lifestyle • Taste</div>
+        </div>
+        <div class="card">
+          <h3>Montbelle Executive Narrative</h3>
+          <p>High-end speech and presentation crafting for leaders: board-ready narratives and calm confidence in delivery.</p>
+          <div class="meta">Comms • Presence</div>
+        </div>
+        <div class="card">
+          <h3>Montbelle Hospitality</h3>
+          <p>Support for boutique hotels and premium venues: presentation, guest experience clarity, and brand storytelling.</p>
+          <div class="meta">Experience • Brand</div>
+        </div>
+        <div class="card">
+          <h3>Montbelle Capital</h3>
+          <p>A future division for selective investments, partnerships, and disciplined capital allocation.</p>
+          <div class="meta">Future • Optional</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Contact">
+      <div class="sectionHead">
+        <h2>Contact</h2>
+        <p class="sub">For private enquiries, reach us directly.</p>
+      </div>
+
+      <div class="contactBox">
+        <div class="contactRow">
+          <div class="left">
+            <h3>Make an enquiry</h3>
+            <p>Email is best. Share what you need and the timeline.</p>
+          </div>
+
+          <!-- Replace email below if/when you create a domain email -->
+          <a class="btn primary" href="mailto:montbellegroup@gmail.com?subject=Montbelle%20Enquiry&body=Hi%20Montbelle%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20...%0D%0A%0D%0ATimeline%3A%20%0D%0ABudget%3A%20%0D%0A%0D%0AThanks%2C">
+            Email Montbelle
+          </a>
+        </div>
+
+        <p style="margin:14px 0 0; color: rgba(20,20,20,.62); font-size: 12px;">
+          Note: Montbelle is currently presented as a private group brand online. Formal company registration and domain email can be activated when required.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Montbelle Holdings</div>
+      <div>Private group • United Kingdom</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
