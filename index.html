@@ -4,55 +4,54 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Montbelle Holdings</title>
-  <meta name="description" content="Montbelle Holdings is a private luxury lifestyle and asset group operating across estates, advisory, image, and strategic ventures." />
-  <meta name="theme-color" content="#f6f1e8" />
+  <meta name="description" content="Montbelle Holdings is a private group operating across real estate, management consulting, advisory, health, photography, and niche perfume refills." />
+  <meta name="theme-color" content="#f4efe6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300,400,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg: #f6f1e8;         /* warm ivory */
-      --paper: #fffaf2;      /* soft paper */
-      --ink: #141414;        /* charcoal */
-      --muted: rgba(20,20,20,.68);
-      --line: rgba(20,20,20,.12);
-      --gold: #b89b5e;       /* restrained gold */
-      --shadow: 0 16px 40px rgba(20,20,20,.08);
+      --bg:#f4efe6;
+      --paper:#fffaf0;
+      --ink:#121212;
+      --muted: rgba(18,18,18,.68);
+      --line: rgba(18,18,18,.12);
+      --gold:#b08a4b;
+      --shadow: 0 22px 55px rgba(18,18,18,.14);
+      --softShadow: 0 14px 38px rgba(18,18,18,.10);
       --radius: 22px;
+      --radiusLg: 28px;
     }
 
-    *{ box-sizing: border-box; }
-    html, body{ height: 100%; }
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
-      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+      color:var(--ink);
       background:
-        radial-gradient(1200px 900px at 10% 0%, rgba(184,155,94,.14), transparent 55%),
-        radial-gradient(900px 800px at 90% 10%, rgba(20,20,20,.08), transparent 50%),
+        radial-gradient(1200px 900px at 12% 0%, rgba(176,138,75,.16), transparent 60%),
+        radial-gradient(900px 750px at 92% 6%, rgba(18,18,18,.10), transparent 55%),
         var(--bg);
-      line-height: 1.6;
-      letter-spacing: .2px;
+      letter-spacing:.2px;
+      line-height:1.6;
     }
 
-    a{ color: inherit; text-decoration: none; }
-    a:hover{ color: var(--gold); }
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ color:var(--gold); }
 
-    .wrap{
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 26px 18px 80px;
-    }
-
-    /* Header */
     header{
       position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(12px);
-      background: rgba(246,241,232,.72);
+      top:0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(244,239,230,.74);
       border-bottom: 1px solid var(--line);
     }
     .navBar{
-      max-width: 1160px;
+      max-width: 1180px;
       margin: 0 auto;
       padding: 14px 18px;
       display:flex;
@@ -61,27 +60,28 @@
       gap: 14px;
     }
     .brand{
-      display:flex; align-items:center; gap: 12px;
-      min-width: 210px;
+      display:flex;
+      align-items:center;
+      gap: 12px;
+      min-width: 260px;
     }
     .mark{
-      width: 38px; height: 38px;
-      border-radius: 14px;
-      border: 1px solid rgba(184,155,94,.6);
-      background: rgba(184,155,94,.10);
-      display:grid; place-items:center;
+      width: 40px;
+      height: 40px;
+      border-radius: 16px;
+      border: 1px solid rgba(176,138,75,.65);
+      background: linear-gradient(180deg, rgba(176,138,75,.20), rgba(176,138,75,.08));
+      display:grid;
+      place-items:center;
       font-weight: 700;
       letter-spacing:.08em;
       color: var(--gold);
       user-select:none;
     }
-    .brandText{
-      display:flex; flex-direction:column;
-      line-height:1.1;
-    }
+    .brandText{ display:flex; flex-direction:column; line-height:1.15; }
     .brandText .name{
       font-size: 12px;
-      letter-spacing: .32em;
+      letter-spacing: .30em;
       text-transform: uppercase;
       font-weight: 650;
     }
@@ -90,31 +90,63 @@
       color: var(--muted);
       margin-top: 6px;
     }
+
     nav{
-      display:flex; align-items:center; gap: 16px;
-      font-size: 13px;
-      color: var(--muted);
+      display:flex;
+      gap: 12px;
       flex-wrap: wrap;
       justify-content: flex-end;
+      color: rgba(18,18,18,.70);
+      font-size: 13px;
     }
     .pill{
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: 10px 14px;
-      background: rgba(255,250,242,.55);
-      box-shadow: 0 1px 0 rgba(20,20,20,.04) inset;
+      background: rgba(255,250,240,.65);
+      box-shadow: 0 1px 0 rgba(18,18,18,.05) inset;
       white-space: nowrap;
     }
     .pill.cta{
-      border-color: rgba(184,155,94,.55);
-      background: rgba(184,155,94,.14);
-      color: var(--ink);
+      border-color: rgba(176,138,75,.60);
+      background: rgba(176,138,75,.16);
     }
 
-    /* Hero */
-    .hero{
-      padding: 56px 0 26px;
+    .wrap{
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px 18px 86px;
     }
+
+    /* HERO */
+    .hero{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 16px;
+      padding: 18px 0 10px;
+      align-items: stretch;
+    }
+    .heroLeft{
+      border-radius: var(--radiusLg);
+      border: 1px solid var(--line);
+      background: rgba(255,250,240,.80);
+      padding: 28px;
+      box-shadow: 0 1px 0 rgba(18,18,18,.05) inset;
+      position: relative;
+      overflow: hidden;
+    }
+    .heroLeft:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(600px 300px at 20% 10%, rgba(176,138,75,.22), transparent 55%),
+        radial-gradient(420px 260px at 88% 20%, rgba(18,18,18,.10), transparent 60%);
+      pointer-events:none;
+      opacity:.95;
+    }
+    .heroLeft > *{ position:relative; }
+
     .kicker{
       display:inline-flex;
       align-items:center;
@@ -122,203 +154,258 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: 8px 12px;
-      background: rgba(255,250,242,.65);
-      color: var(--muted);
+      background: rgba(255,250,240,.72);
+      color: rgba(18,18,18,.72);
       font-size: 12px;
-      letter-spacing: .12em;
+      letter-spacing: .14em;
       text-transform: uppercase;
     }
     .dot{
-      width: 8px; height: 8px;
+      width: 8px;
+      height: 8px;
       border-radius: 99px;
       background: var(--gold);
-      box-shadow: 0 0 0 6px rgba(184,155,94,.14);
+      box-shadow: 0 0 0 7px rgba(176,138,75,.14);
     }
 
     .hero h1{
-      margin: 18px 0 14px;
-      font-size: 46px;
-      font-weight: 520;
+      font-family: Fraunces, serif;
+      margin: 16px 0 12px;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1.05;
       letter-spacing: -.02em;
-      line-height: 1.08;
-      max-width: 980px;
     }
     .hero p{
-      margin: 0 0 22px;
+      margin: 0 0 18px;
       color: var(--muted);
-      max-width: 780px;
-      font-size: 16px;
+      max-width: 680px;
+      font-size: 15.5px;
     }
 
-    .heroActions{
-      display:flex; gap: 12px; flex-wrap: wrap;
-      margin-top: 10px;
-    }
+    .actions{ display:flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
     .btn{
-      display:inline-flex; align-items:center; justify-content:center;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
       gap: 10px;
       padding: 12px 16px;
       border-radius: 14px;
       border: 1px solid var(--line);
-      background: rgba(255,250,242,.75);
-      box-shadow: 0 1px 0 rgba(20,20,20,.05) inset;
+      background: rgba(255,250,240,.86);
+      box-shadow: 0 1px 0 rgba(18,18,18,.05) inset;
       font-size: 14px;
       transition: transform .15s ease, box-shadow .15s ease;
     }
-    .btn:hover{
-      transform: translateY(-1px);
-      box-shadow: var(--shadow);
-    }
+    .btn:hover{ transform: translateY(-1px); box-shadow: var(--softShadow); }
     .btn.primary{
-      border-color: rgba(184,155,94,.60);
-      background: linear-gradient(180deg, rgba(184,155,94,.20), rgba(184,155,94,.10));
+      border-color: rgba(176,138,75,.65);
+      background: linear-gradient(180deg, rgba(176,138,75,.24), rgba(176,138,75,.10));
     }
 
-    /* Cards */
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 14px;
-      margin-top: 26px;
-    }
-    .card{
-      grid-column: span 6;
-      border-radius: var(--radius);
+    .heroRight{
+      border-radius: var(--radiusLg);
+      overflow: hidden;
       border: 1px solid var(--line);
-      background: rgba(255,250,242,.80);
-      padding: 18px;
-      box-shadow: 0 1px 0 rgba(20,20,20,.04) inset;
+      position: relative;
+      box-shadow: var(--shadow);
+      min-height: 360px;
+      background: #e9e2d6;
     }
-    .card h3{
-      margin: 0 0 8px;
-      font-size: 15px;
-      font-weight: 650;
-      letter-spacing: .02em;
+    .heroRight img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display:block;
     }
-    .card p{
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
+    .heroRight .overlay{
+      position:absolute;
+      inset:0;
+      background: linear-gradient(180deg, rgba(18,18,18,.08), rgba(18,18,18,.42));
     }
-    .card .meta{
-      margin-top: 12px;
-      font-size: 12px;
-      color: rgba(20,20,20,.55);
-      letter-spacing: .10em;
+    .heroRight .caption{
+      position:absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      padding: 14px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(18,18,18,.36);
+      color: rgba(255,255,255,.92);
+      backdrop-filter: blur(10px);
+    }
+    .caption strong{
+      display:block;
+      letter-spacing:.12em;
       text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+    .caption span{
+      display:block;
+      font-size: 13px;
+      color: rgba(255,255,255,.86);
     }
 
     /* Sections */
     section{
-      margin-top: 44px;
-      padding-top: 28px;
+      margin-top: 42px;
+      padding-top: 26px;
       border-top: 1px solid var(--line);
     }
     .sectionHead{
       display:flex;
       align-items:flex-end;
       justify-content: space-between;
-      gap: 16px;
+      gap: 14px;
       flex-wrap: wrap;
     }
     .sectionHead h2{
-      margin: 0;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: .16em;
+      margin:0;
+      font-size: 15px;
+      letter-spacing: .22em;
       text-transform: uppercase;
+      font-weight: 700;
     }
-    .sectionHead .sub{
-      margin: 0;
+    .sectionHead p{
+      margin:0;
       color: var(--muted);
       font-size: 13px;
-      max-width: 520px;
+      max-width: 620px;
     }
 
-    /* Divisions */
-    .division{
-      grid-column: span 6;
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background: rgba(255,250,242,.78);
+    /* Division rows: image next to content */
+    .divisionGrid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+      margin-top: 16px;
     }
-    .division .label{
-      display:flex; align-items:center; justify-content:space-between; gap: 12px;
+    .divisionCard{
+      grid-column: span 12;
+      border: 1px solid var(--line);
+      border-radius: var(--radiusLg);
+      background: rgba(255,250,240,.84);
+      box-shadow: 0 1px 0 rgba(18,18,18,.05) inset;
+      overflow: hidden;
+      display:grid;
+      grid-template-columns: 5fr 7fr;
+      min-height: 240px;
+    }
+    .divisionMedia{
+      position: relative;
+      background: #e9e2d6;
+      min-height: 240px;
+    }
+    .divisionMedia img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display:block;
+    }
+    .divisionMedia::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(90deg, rgba(18,18,18,.22), rgba(18,18,18,.02));
+      pointer-events:none;
+    }
+    .divisionBody{
+      padding: 18px 18px 18px 18px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .divisionTop{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
       margin-bottom: 10px;
     }
-    .division .label strong{
-      font-size: 16px;
-      letter-spacing: .02em;
+    .divisionTitle{
+      font-family: Fraunces, serif;
+      font-weight: 400;
+      font-size: 26px;
+      margin: 0;
+      letter-spacing: -.01em;
     }
     .badge{
       font-size: 11px;
       letter-spacing: .14em;
       text-transform: uppercase;
-      color: rgba(20,20,20,.62);
-      border: 1px solid var(--line);
-      border-radius: 999px;
       padding: 6px 10px;
-      background: rgba(255,250,242,.65);
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,250,240,.75);
+      color: rgba(18,18,18,.70);
       white-space: nowrap;
     }
-    .division p{ margin: 0 0 12px; color: var(--muted); font-size: 14px; }
-    ul.clean{
+    .divisionDesc{
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 760px;
+    }
+    .bullets{
       list-style: none;
       padding: 0;
       margin: 0;
       display:grid;
       gap: 8px;
     }
-    ul.clean li{
+    .bullets li{
       padding: 10px 12px;
       border-radius: 14px;
-      border: 1px solid rgba(20,20,20,.10);
-      background: rgba(255,250,242,.72);
+      border: 1px solid rgba(18,18,18,.10);
+      background: rgba(255,250,240,.78);
       font-size: 13px;
-      color: rgba(20,20,20,.78);
+      color: rgba(18,18,18,.78);
     }
 
-    /* Philosophy + Values */
+    /* About / Approach */
     .twoCol{
       display:grid;
-      grid-template-columns: 1.2fr .8fr;
+      grid-template-columns: 1.1fr .9fr;
       gap: 14px;
       margin-top: 16px;
     }
-    .quote{
-      border-left: 3px solid rgba(184,155,94,.7);
-      padding: 14px 14px 14px 16px;
-      border-radius: 16px;
-      background: rgba(184,155,94,.10);
-      color: rgba(20,20,20,.78);
-      font-size: 14px;
+    .card{
+      border-radius: var(--radiusLg);
+      border: 1px solid var(--line);
+      background: rgba(255,250,240,.84);
+      padding: 18px;
+      box-shadow: 0 1px 0 rgba(18,18,18,.05) inset;
     }
+    .card h3{
+      margin:0 0 10px;
+      font-family: Fraunces, serif;
+      font-weight: 400;
+      font-size: 22px;
+      letter-spacing: -.01em;
+    }
+    .card p{ margin:0; color: var(--muted); font-size: 14px; }
 
     /* Contact */
-    .contactBox{
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background: rgba(255,250,242,.85);
-      padding: 18px;
+    .contact{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
       margin-top: 16px;
-      box-shadow: 0 1px 0 rgba(20,20,20,.04) inset;
     }
-    .contactRow{
-      display:flex; gap: 12px; flex-wrap: wrap; align-items:center; justify-content: space-between;
+    .contact .left{ min-width: 280px; }
+    .contact .left strong{
+      display:block;
+      font-family: Fraunces, serif;
+      font-weight: 400;
+      font-size: 22px;
+      margin-bottom: 6px;
     }
-    .contactRow .left{
-      min-width: 260px;
-    }
-    .contactRow .left h3{
-      margin: 0 0 6px;
-      font-size: 16px;
-    }
-    .contactRow .left p{
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
+    .contact .left span{ color: var(--muted); font-size: 14px; }
 
     footer{
       margin-top: 56px;
@@ -328,17 +415,23 @@
       justify-content: space-between;
       gap: 12px;
       flex-wrap: wrap;
-      color: rgba(20,20,20,.62);
+      color: rgba(18,18,18,.62);
       font-size: 12px;
     }
 
     /* Responsive */
-    @media (max-width: 920px){
-      .hero h1{ font-size: 36px; }
-      .card{ grid-column: span 12; }
-      .division{ grid-column: span 12; }
+    @media (max-width: 980px){
+      .hero{ grid-template-columns: 1fr; }
+      .heroRight{ min-height: 320px; }
       .twoCol{ grid-template-columns: 1fr; }
-      .brand{ min-width: unset; }
+      .divisionCard{ grid-template-columns: 1fr; }
+      .divisionMedia::after{ background: linear-gradient(180deg, rgba(18,18,18,.18), rgba(18,18,18,.02)); }
+      .hero h1{ font-size: 40px; }
+    }
+    @media (max-width: 540px){
+      .heroLeft{ padding: 22px; }
+      .hero h1{ font-size: 34px; }
+      nav{ display:none; }
     }
   </style>
 </head>
@@ -350,218 +443,231 @@
         <div class="mark">M</div>
         <div class="brandText">
           <div class="name">Montbelle Holdings</div>
-          <div class="tag">Luxury lifestyle & asset group</div>
+          <div class="tag">A private group across assets, advisory and studio work</div>
         </div>
       </div>
 
       <nav>
-        <a class="pill" href="#about">About</a>
         <a class="pill" href="#divisions">Divisions</a>
-        <a class="pill" href="#values">Values</a>
-        <a class="pill" href="#insights">Ideas</a>
+        <a class="pill" href="#about">About</a>
+        <a class="pill" href="#approach">Approach</a>
         <a class="pill cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
-    <section class="hero" aria-label="Montbelle hero">
-      <div class="kicker"><span class="dot"></span> Private group • Curated ventures</div>
 
-      <h1>Luxury assets, strategic intelligence, and curated aesthetics — built with intention.</h1>
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="heroLeft">
+        <div class="kicker"><span class="dot"></span> Curated ventures • Long term value</div>
 
-      <p>
-        Montbelle Holdings is a private lifestyle and asset group operating across property, management consulting,
-        strategic advisory, image, and photography. We partner selectively, prioritising discretion, quality, and enduring value.
-      </p>
+        <h1>Property, strategy, wellbeing, and craft — under one house.</h1>
 
-      <div class="heroActions">
-        <a class="btn primary" href="#divisions">Explore the divisions</a>
-        <a class="btn" href="#contact">Make an enquiry</a>
-      </div>
+        <p>
+          Montbelle Holdings operates across real estate, management consulting, strategic advisory, health, photography, and niche perfume refills.
+          We work with individuals and organisations who value discretion, clarity, and delivery.
+        </p>
 
-      <div class="grid" aria-label="Highlights">
-        <div class="card">
-          <h3>Asset-led thinking</h3>
-          <p>We focus on long-term value creation across property, portfolio decisions, and brand equity.</p>
-          <div class="meta">Estates • Capital discipline</div>
-        </div>
-        <div class="card">
-          <h3>Discreet execution</h3>
-          <p>Our work is calm, structured, and deliberate — the goal is outcomes, not noise.</p>
-          <div class="meta">Advisory • Aesthetics</div>
+        <div class="actions">
+          <a class="btn primary" href="#divisions">Explore the divisions</a>
+          <a class="btn" href="#contact">Make an enquiry</a>
         </div>
       </div>
-    </section>
 
-    <section id="about" aria-label="About">
-      <div class="sectionHead">
-        <h2>About</h2>
-        <p class="sub">A private house of brands operating across assets, advisory, and aesthetics.</p>
-      </div>
-
-      <div class="twoCol">
-        <div class="card" style="grid-column: unset;">
-          <h3>Montbelle is built around a simple belief.</h3>
-          <p>
-            Assets should appreciate, strategy should be defensible, and presentation should be intentional.
-            We bring together commercial discipline and refined taste to help individuals and organisations make better decisions —
-            and look the part while doing it.
-          </p>
-          <p style="margin-top:12px;">
-            The group’s activities are delivered through dedicated divisions, allowing each area to remain focused, specialised, and premium.
-          </p>
-        </div>
-
-        <div class="quote">
-          “Luxury is not excess. It is restraint, taste, and consistency.”<br><br>
-          <span style="color:rgba(20,20,20,.62);">Montbelle operates with discretion. Engagements are selective.</span>
+      <!-- Use a stable HTTPS image -->
+      <div class="heroRight" aria-label="Hero image">
+        <img
+          src="https://picsum.photos/seed/montbelle-hero/1400/900"
+          alt="People and modern working environment"
+          loading="eager"
+        />
+        <div class="overlay"></div>
+        <div class="caption">
+          <strong>Montbelle</strong>
+          <span>Built with intention. Delivered with calm confidence.</span>
         </div>
       </div>
     </section>
 
+    <!-- DIVISIONS -->
     <section id="divisions" aria-label="Divisions">
       <div class="sectionHead">
         <h2>Divisions</h2>
-        <p class="sub">Distinct verticals, one philosophy: value creation with taste.</p>
+        <p>Each division is visually represented and clearly positioned, so the site feels like a real group company.</p>
       </div>
 
-      <div class="grid" style="margin-top:16px;">
-        <div class="division">
-          <div class="label">
-            <strong>Montbelle Estates</strong>
-            <span class="badge">Real Estate</span>
+      <div class="divisionGrid">
+
+        <!-- Real Estate -->
+        <article class="divisionCard" aria-label="Montbelle Estates">
+          <div class="divisionMedia">
+            <img src="https://picsum.photos/seed/montbelle-estates-house/1200/800" alt="A beautiful home representing real estate" loading="lazy">
           </div>
-          <p>Property acquisition, portfolio optimisation, and value-led improvements — with a long-term lens.</p>
-          <ul class="clean">
-            <li>Buy to hold strategy and deal screening</li>
-            <li>Property improvement planning and ROI logic</li>
-            <li>Portfolio positioning and performance reviews</li>
-          </ul>
+          <div class="divisionBody">
+            <div class="divisionTop">
+              <h3 class="divisionTitle">Montbelle Estates</h3>
+              <span class="badge">Real Estate</span>
+            </div>
+            <p class="divisionDesc">Property acquisition, portfolio thinking, and value-led improvements with a long-term lens.</p>
+            <ul class="bullets">
+              <li>Deal screening and acquisition support</li>
+              <li>ROI-led improvement planning and refurbishment direction</li>
+              <li>Portfolio review and performance positioning</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Management Consulting + Advisory -->
+        <article class="divisionCard" aria-label="Montbelle Advisory">
+          <div class="divisionMedia">
+            <img src="https://picsum.photos/seed/montbelle-consulting-meeting/1200/800" alt="A consulting meeting representing management consulting and advisory" loading="lazy">
+          </div>
+          <div class="divisionBody">
+            <div class="divisionTop">
+              <h3 class="divisionTitle">Montbelle Advisory</h3>
+              <span class="badge">Management Consulting</span>
+            </div>
+            <p class="divisionDesc">Management consulting and strategic advisory: commercial models, pricing, execution, and AI-enabled workflows.</p>
+            <ul class="bullets">
+              <li>Commercial strategy, pricing and packaging</li>
+              <li>Forecasting models, scenario planning, decision dashboards</li>
+              <li>Executive narrative and structured communications</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Health (replaces Image) -->
+        <article class="divisionCard" aria-label="Montbelle Health">
+          <div class="divisionMedia">
+            <img src="https://picsum.photos/seed/montbelle-health-wellbeing/1200/800" alt="Wellbeing and health activity representing Montbelle Health" loading="lazy">
+          </div>
+          <div class="divisionBody">
+            <div class="divisionTop">
+              <h3 class="divisionTitle">Montbelle Health</h3>
+              <span class="badge">Wellbeing</span>
+            </div>
+            <p class="divisionDesc">A wellbeing-led business focused on calm performance: sleep, routine, and sustainable energy.</p>
+            <ul class="bullets">
+              <li>Sleep and recovery guidance and routines</li>
+              <li>Simple nutrition and supplement literacy</li>
+              <li>High-performance habits without burnout</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Photography -->
+        <article class="divisionCard" aria-label="Montbelle Studio">
+          <div class="divisionMedia">
+            <img src="https://picsum.photos/seed/montbelle-photography-portrait/1200/800" alt="Photography scene representing Montbelle Studio" loading="lazy">
+          </div>
+          <div class="divisionBody">
+            <div class="divisionTop">
+              <h3 class="divisionTitle">Montbelle Studio</h3>
+              <span class="badge">Photography</span>
+            </div>
+            <p class="divisionDesc">Portrait, lifestyle, and brand photography that feels confident, clean, and editorial.</p>
+            <ul class="bullets">
+              <li>Personal brand portraits and professional headshots</li>
+              <li>Lifestyle and editorial shoots</li>
+              <li>Visual content for founders and executives</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Perfume refills -->
+        <article class="divisionCard" aria-label="Montbelle Perfume Atelier">
+          <div class="divisionMedia">
+            <img src="https://picsum.photos/seed/montbelle-perfume-bottles/1200/800" alt="Perfume bottles representing niche perfume refills" loading="lazy">
+          </div>
+          <div class="divisionBody">
+            <div class="divisionTop">
+              <h3 class="divisionTitle">Montbelle Perfume Atelier</h3>
+              <span class="badge">Niche Perfume Refills</span>
+            </div>
+            <p class="divisionDesc">Curated, niche perfume refills and decants — taste-led selection, clean presentation, and repeatable quality.</p>
+            <ul class="bullets">
+              <li>Refill and decant formats for premium scents</li>
+              <li>Curated seasonal drops and discovery sets</li>
+              <li>Gifting and personal collections</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-label="About">
+      <div class="sectionHead">
+        <h2>About</h2>
+        <p>Montbelle is designed to feel established: clear divisions, visual identity, and a calm premium tone.</p>
+      </div>
+
+      <div class="twoCol">
+        <div class="card">
+          <h3>Built with intention</h3>
+          <p>
+            The group sits at the intersection of assets, strategic thinking, wellbeing, and craft.
+            Each division is focused, but everything shares the same standard: thoughtful choices, strong execution, and refined outcomes.
+          </p>
         </div>
 
-        <div class="division">
-          <div class="label">
-            <strong>Montbelle Advisory</strong>
-            <span class="badge">Consulting</span>
-          </div>
-          <p>Management consulting and strategic advisory focused on commercial clarity, pricing, and execution.</p>
-          <ul class="clean">
-            <li>Management consulting for growth and operating clarity</li>
-            <li>Commercial models, forecasting, and scenario planning</li>
-            <li>Pricing, packaging, and offer simplification</li>
-          </ul>
-        </div>
-
-        <div class="division">
-          <div class="label">
-            <strong>Montbelle Image</strong>
-            <span class="badge">Image Consulting</span>
-          </div>
-          <p>Executive presence and personal brand refinement — wardrobe, style direction, and visual coherence.</p>
-          <ul class="clean">
-            <li>Executive image strategy and style curation</li>
-            <li>Personal brand positioning and visual guidelines</li>
-            <li>Event and professional styling support</li>
-          </ul>
-        </div>
-
-        <div class="division">
-          <div class="label">
-            <strong>Montbelle Studio</strong>
-            <span class="badge">Photography</span>
-          </div>
-          <p>Premium photography for personal brand, lifestyle, and discreet corporate needs.</p>
-          <ul class="clean">
-            <li>Portraits and personal brand sessions</li>
-            <li>Lifestyle, travel, and editorial-style shoots</li>
-            <li>Brand visuals for founders and executives</li>
-          </ul>
+        <div class="card">
+          <h3>How we work</h3>
+          <p>
+            We keep engagement structured and discreet. Clear scope, clear outcomes, and delivery that feels complete.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="values" aria-label="Values">
+    <!-- APPROACH -->
+    <section id="approach" aria-label="Approach">
       <div class="sectionHead">
-        <h2>Values</h2>
-        <p class="sub">Luxury is a standard. The standard is how we operate.</p>
+        <h2>Approach</h2>
+        <p>Premium outcomes come from consistency: discipline in decisions and care in presentation.</p>
       </div>
 
-      <div class="grid" style="margin-top:16px;">
+      <div class="twoCol">
         <div class="card">
           <h3>Discretion</h3>
-          <p>We respect privacy. We do not over-share, over-market, or over-promise. Work speaks.</p>
+          <p>Professional, private, and focused. Less noise, more substance.</p>
         </div>
         <div class="card">
           <h3>Precision</h3>
-          <p>Clear thinking, structured decisions, and polished delivery — in business, in assets, and in image.</p>
-        </div>
-        <div class="card" style="grid-column: span 12;">
-          <h3>Consistency</h3>
-          <p>Premium brands are built through repeatable excellence. Montbelle is designed for long-term credibility.</p>
+          <p>Clear logic, strong structure, and delivery you can stand behind.</p>
         </div>
       </div>
     </section>
 
-    <section id="insights" aria-label="Ideas">
-      <div class="sectionHead">
-        <h2>Ideas</h2>
-        <p class="sub">Additional Montbelle concepts that match your “luxury lifestyle + asset” direction.</p>
-      </div>
-
-      <div class="grid" style="margin-top:16px;">
-        <div class="card">
-          <h3>Montbelle Curations</h3>
-          <p>Curated lifestyle guidance: fragrance, wardrobe staples, travel planning, and gifting — taste-led, not trend-led.</p>
-          <div class="meta">Lifestyle • Taste</div>
-        </div>
-        <div class="card">
-          <h3>Montbelle Executive Narrative</h3>
-          <p>High-end speech and presentation crafting for leaders: board-ready narratives and calm confidence in delivery.</p>
-          <div class="meta">Comms • Presence</div>
-        </div>
-        <div class="card">
-          <h3>Montbelle Hospitality</h3>
-          <p>Support for boutique hotels and premium venues: presentation, guest experience clarity, and brand storytelling.</p>
-          <div class="meta">Experience • Brand</div>
-        </div>
-        <div class="card">
-          <h3>Montbelle Capital</h3>
-          <p>A future division for selective investments, partnerships, and disciplined capital allocation.</p>
-          <div class="meta">Future • Optional</div>
-        </div>
-      </div>
-    </section>
-
+    <!-- CONTACT -->
     <section id="contact" aria-label="Contact">
       <div class="sectionHead">
         <h2>Contact</h2>
-        <p class="sub">For private enquiries, reach us directly.</p>
+        <p>For enquiries, email is best. Share what you need and the timeline.</p>
       </div>
 
-      <div class="contactBox">
-        <div class="contactRow">
+      <div class="card" style="margin-top:16px;">
+        <div class="contact">
           <div class="left">
-            <h3>Make an enquiry</h3>
-            <p>Email is best. Share what you need and the timeline.</p>
+            <strong>Make an enquiry</strong>
+            <span>We reply from the Montbelle inbox.</span>
           </div>
 
-          <!-- Replace email below if/when you create a domain email -->
-          <a class="btn primary" href="mailto:montbellegroup@gmail.com?subject=Montbelle%20Enquiry&body=Hi%20Montbelle%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20...%0D%0A%0D%0ATimeline%3A%20%0D%0ABudget%3A%20%0D%0A%0D%0AThanks%2C">
+          <a class="btn primary" href="mailto:montbellegroup@gmail.com?subject=Montbelle%20enquiry&body=Hello%20Montbelle%2C%0D%0A%0D%0AI%27d%20like%20to%20enquire%20about%20...%0D%0A%0D%0ATimeline%3A%0D%0ABudget%3A%0D%0A%0D%0AThank%20you%2C">
             Email Montbelle
           </a>
         </div>
-
-        <p style="margin:14px 0 0; color: rgba(20,20,20,.62); font-size: 12px;">
-          Note: Montbelle is currently presented as a private group brand online. Formal company registration and domain email can be activated when required.
-        </p>
       </div>
     </section>
 
     <footer>
       <div>© <span id="y"></span> Montbelle Holdings</div>
-      <div>Private group • United Kingdom</div>
+      <div>United Kingdom</div>
     </footer>
+
   </main>
 
   <script>
